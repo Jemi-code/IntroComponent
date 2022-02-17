@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: hsl(0, 100%, 74%);
+            background-image: url('images/bg-intro-desktop.png');
+            overflow: hidden;
+        }
+
+        header{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1{
+            text-align: center;
+            animation-name: pulsing;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            transform: scale(1);
+        }
+
+        @keyframes pulsing{
+            0%{
+                transform: scale(2);
+            }
+
+            100%{
+                transform: scale(3);
+            }
+        }
+
+        header p{
+            padding: 1rem 2rem;
+            background-color: hsl(248, 32%, 49%);
+            border-radius: 2rem;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+            transform: rotateY(180deg);
+        }
+
+        p:hover{
+            transform: rotateY(0deg);
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (max-width: 566px){
+            header h1{
+                font-size: 1.2rem;
+            }
+
+            header p{
+                transform: rotateY(0deg);
+            }
+
+            p:hover{
+                transform: rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Thank you!!</h1>
+        <p><a href="index.html">Go back</a></p>
+    </header>
+</body>
+</html>

@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url('images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.text{
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1{
+    width: 90%;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+header p{
+    width: 90%;
+    line-height: 1.5rem;
+}
+
+.form{
+    width: 100%;
+}
+
+.form form{
+    width: 100%;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+::placeholder{
+    color: gray;
+    font-weight: 600;
+}
+
+input[type = "text"], input[type = "email"], input[type = "password"]{
+    margin-bottom: 1.5rem;
+    outline: 1px solid lightgray;
+    border: none
+}
+
+input[type = "text"]:focus, input[type = "email"]:focus, input[type = "password"]:focus{
+    outline: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]{
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+input[type="submit"]:hover{
+    background-color: hsla(154, 59%, 51%, 0.658);
+    cursor: pointer;
+
+}
+
+.extra{
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 3px hsla(249, 10%, 26%, 0.315);
+}
+
+.extra span{
+    font-weight: 600;
+}
+
+.extra p{
+    text-align: center;
+    color: white;
+}
+
+#form{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 10px 3px hsla(249, 10%, 26%, 0.315);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    position: relative;
+    left: 90%;
+    bottom: 2.5rem;
+    display: none;
+    margin-bottom: -0.5rem;
+}
+
+#fnErr, #lnErr, #eErr, #pErr{
+    position: relative;
+    bottom: 1rem;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+.terms{
+    color:  hsl(246, 25%, 77%);
+    font-size: 70%;
+    text-align: center;
+}
+
+.terms span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    text-align: center;
+}
+
+@media screen and (max-width: 950px){
+    img{
+        left: 85%;
+    }
+
+    .form{
+        width: 120%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .wrapper{
+        width: 90%;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+    
+    header p{
+        width: 80%;
+    }
+
+    .form{
+        width: 150%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .form{
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 646px){
+    .body{
+        height: max-content;
+        margin: 5rem 0;
+    }
+
+    .wrapper{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    header{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    header h1{
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+    header p{
+        text-align: center;
+        line-height: 1.6rem;
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
